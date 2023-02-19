@@ -48,7 +48,7 @@ export default class Jogo {
       }
     });
 
-    if (!simboloCasas.includes(null)) {
+    if (!simboloCasas.includes(null) && !this.srcResposta) {
       this.resposta = "Empatou!!! Deu velha!";
       this.mostraResultado();
     }
