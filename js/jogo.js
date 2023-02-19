@@ -35,7 +35,8 @@ export default class Jogo {
       if (
         simboloCasas[item[0]] !== null &&
         simboloCasas[item[1]] !== null &&
-        simboloCasas[item[2]] !== null
+        simboloCasas[item[2]] !== null &&
+        !this.srcResposta
       ) {
         if (
           simboloCasas[item[0]].currentSrc ===
