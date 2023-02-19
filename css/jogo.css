@@ -1,0 +1,145 @@
+.jogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+li {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  list-style: none;
+  background: #457b9d;
+}
+
+.turno {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Merienda", cursive;
+}
+
+.turno img {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  width: 100px;
+  margin-left: 50px;
+}
+
+@media (max-height: 1200px) {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    list-style: none;
+    background: #457b9d;
+  }
+  li img {
+    width: 125px;
+  }
+}
+
+@media (max-height: 700px) {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    list-style: none;
+    background: #457b9d;
+  }
+  li img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 950px) {
+  .wrapper::before {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    list-style: none;
+    background: #457b9d;
+  }
+  li img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    width: 100%;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    list-style: none;
+    background: #457b9d;
+  }
+  li img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    width: 100%;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    list-style: none;
+    background: #457b9d;
+  }
+  li img {
+    width: 75px;
+  }
+}
